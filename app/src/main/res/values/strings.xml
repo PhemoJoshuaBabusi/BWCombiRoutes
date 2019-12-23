@@ -1,3 +1,10 @@
 <resources>
     <string name="app_name">BW Combi Routes</string>
+    <string name="search_route">Search a route</string>
+
+    <string-array name="routes">
+        <item>Tlokweng Route 1</item>
+        <item>Tlokweng Route 2</item>
+        <item>Block 8 Route 4</item>
+    </string-array>
 </resources>
