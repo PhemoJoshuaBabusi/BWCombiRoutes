@@ -8,27 +8,28 @@
 
     <SearchView
         android:id="@+id/routesSearchView"
-        android:layout_width="224dp"
+        android:layout_width="0dp"
         android:layout_height="48dp"
         android:layout_marginTop="68dp"
+        android:queryHint="Search Routes here"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <ImageView
         android:id="@+id/routesImageView"
-        android:layout_width="350dp"
+        android:layout_width="0dp"
         android:layout_height="266dp"
-        android:layout_marginTop="16dp"
+        android:layout_marginTop="52dp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.492"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/routesSearchView"
         app:srcCompat="@mipmap/tlokweng" />
 
     <Spinner
         android:id="@+id/routesSpinner"
-        android:layout_width="409dp"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
