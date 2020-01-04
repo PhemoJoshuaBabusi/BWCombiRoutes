@@ -25,7 +25,8 @@
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/routesSearchView"
-        app:srcCompat="@mipmap/tlokweng" />
+        app:srcCompat="@android:drawable/ic_dialog_map"
+        android:contentDescription="@string/cd" />
 
     <Spinner
         android:id="@+id/routesSpinner"

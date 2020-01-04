@@ -10,9 +10,6 @@ import android.widget.ImageView;
 import android.widget.SearchView;
 import android.widget.Spinner;
 
-import static com.Np2.bwcombiroutes.R.mipmap.ic_launcher_round;
-import static com.Np2.bwcombiroutes.R.mipmap.tlokweng;
-
 public class MainActivity extends AppCompatActivity {
 
     private Spinner routesSpinner;
@@ -24,6 +21,7 @@ public class MainActivity extends AppCompatActivity {
 
         SearchView routesSearchView = findViewById(R.id.routesSearchView);
         routesSpinner = findViewById(R.id.routesSpinner);
+        ImageView routesImageView = findViewById(R.id.routesImageView);
 
 
         final ArrayAdapter<CharSequence> adapter = ArrayAdapter.createFromResource(
@@ -36,19 +34,20 @@ public class MainActivity extends AppCompatActivity {
             public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
                 String item = parent.getItemAtPosition(position).toString();
                 switch (item) {
+
                     case "Tlokweng Route 1":
                         ((ImageView) findViewById(R.id.routesImageView)).setImageResource(
-                                (tlokweng));
+                                (R.drawable.tlk_r1));
                         break;
 
                     case "Tlokweng Route 2":
                         ((ImageView) findViewById(R.id.routesImageView)).setImageResource(
-                                (R.mipmap.ic_launcher));
+                                (R.drawable.tlk_r2));
                         break;
 
                     case "Block 8 Route 4":
                         ((ImageView) findViewById(R.id.routesImageView)).setImageResource(
-                                (ic_launcher_round));
+                                (R.drawable.blk8_r4));
                 }
             }
 
@@ -75,5 +74,7 @@ public class MainActivity extends AppCompatActivity {
                 return false;
             }
         });
+
+        
 
     }}

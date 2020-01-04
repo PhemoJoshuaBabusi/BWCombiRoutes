@@ -1,7 +1,9 @@
 <resources>
     <string name="app_name">BW Combi Routes</string>
+    <string name="cd">Route map</string>
 
     <string-array name="routes">
+        <item>Select a Route</item>
         <item>Tlokweng Route 1</item>
         <item>Tlokweng Route 2</item>
         <item>Block 8 Route 4</item>
