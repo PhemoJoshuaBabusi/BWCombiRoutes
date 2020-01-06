@@ -59,10 +59,10 @@ public class MainActivity extends AppCompatActivity {
         routesSearchView.setOnQueryTextListener(new SearchView.OnQueryTextListener() {
 
             @Override
-            public boolean onQueryTextSubmit(String query) {
+            public boolean onQueryTextSubmit(String queri) {
                 routesSpinner.performClick();
 
-                adapter.getFilter().filter(query);
+                adapter.getFilter().filter(queri);
 
                 return false;
             }
