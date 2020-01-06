@@ -30,7 +30,8 @@
                 android:id="@+id/routesImageView"
                 android:layout_width="match_parent"
                 android:layout_height="266dp"
-                app:srcCompat="@android:drawable/ic_dialog_map" />
+                app:srcCompat="@android:drawable/ic_dialog_map"
+                android:contentDescription="@string/cd" />
 
             <Spinner
                 android:id="@+id/routesSpinner"

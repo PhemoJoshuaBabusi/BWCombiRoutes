@@ -21,7 +21,6 @@ public class MainActivity extends AppCompatActivity {
 
         SearchView routesSearchView = findViewById(R.id.routesSearchView);
         routesSpinner = findViewById(R.id.routesSpinner);
-        ImageView routesImageView = findViewById(R.id.routesImageView);
 
 
         final ArrayAdapter<CharSequence> adapter = ArrayAdapter.createFromResource(
@@ -74,7 +73,4 @@ public class MainActivity extends AppCompatActivity {
                 return false;
             }
         });
-
-        
-
     }}
