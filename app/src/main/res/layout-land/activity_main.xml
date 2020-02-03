@@ -26,11 +26,11 @@
                 android:layout_marginTop="4dp"
                 android:queryHint="Search Routes here" />
 
-            <ImageView
-                android:id="@+id/routesImageView"
+            <com.davemorrissey.labs.subscaleview.SubsamplingScaleImageView
+                android:id="@+id/routesImageZoomView"
                 android:layout_width="match_parent"
                 android:layout_height="266dp"
-                app:srcCompat="@android:drawable/ic_dialog_map"
+                app:src="@android:drawable/ic_dialog_map"
                 android:contentDescription="@string/cd" />
 
             <Spinner

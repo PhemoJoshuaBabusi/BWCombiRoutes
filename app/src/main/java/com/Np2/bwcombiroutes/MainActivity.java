@@ -6,9 +6,11 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
-import android.widget.ImageView;
 import android.widget.SearchView;
 import android.widget.Spinner;
+
+import com.davemorrissey.labs.subscaleview.ImageSource;
+import com.davemorrissey.labs.subscaleview.SubsamplingScaleImageView;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -21,6 +23,7 @@ public class MainActivity extends AppCompatActivity {
 
         SearchView routesSearchView = findViewById(R.id.routesSearchView);
         routesSpinner = findViewById(R.id.routesSpinner);
+        final SubsamplingScaleImageView routesImageZoomView = findViewById(R.id.routesImageZoomView);
 
 
         final ArrayAdapter<CharSequence> adapter = ArrayAdapter.createFromResource(
@@ -35,18 +38,15 @@ public class MainActivity extends AppCompatActivity {
                 switch (item) {
 
                     case "Tlokweng Route 1":
-                        ((ImageView) findViewById(R.id.routesImageView)).setImageResource(
-                                (R.drawable.tlk_r1));
+                        routesImageZoomView.setImage(ImageSource.resource(R.drawable.tlk_r1));
                         break;
 
                     case "Tlokweng Route 2":
-                        ((ImageView) findViewById(R.id.routesImageView)).setImageResource(
-                                (R.drawable.tlk_r2));
+                        routesImageZoomView.setImage(ImageSource.resource(R.drawable.tlk_r2));
                         break;
 
                     case "Block 8 Route 4":
-                        ((ImageView) findViewById(R.id.routesImageView)).setImageResource(
-                                (R.drawable.blk8_r4));
+                        routesImageZoomView.setImage(ImageSource.resource(R.drawable.blk8_r4));
                 }
             }
 

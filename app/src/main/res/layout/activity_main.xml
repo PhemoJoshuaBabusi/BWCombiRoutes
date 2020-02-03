@@ -16,17 +16,17 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <ImageView
-        android:id="@+id/routesImageView"
+    <com.davemorrissey.labs.subscaleview.SubsamplingScaleImageView
+        android:id="@+id/routesImageZoomView"
         android:layout_width="0dp"
         android:layout_height="266dp"
         android:layout_marginTop="52dp"
+        android:contentDescription="@string/cd"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/routesSearchView"
-        app:srcCompat="@android:drawable/ic_dialog_map"
-        android:contentDescription="@string/cd" />
+        app:src="@android:drawable/ic_dialog_map" />
 
     <Spinner
         android:id="@+id/routesSpinner"
@@ -35,5 +35,6 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/routesImageView" />
+        app:layout_constraintTop_toBottomOf="@+id/routesImageZoomView" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
